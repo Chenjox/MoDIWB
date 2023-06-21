@@ -9,7 +9,7 @@
   </Features>
   <Geometries Checked="True" Expanded="True">
     <Layer Name="Elbe-Umflut-Kanal" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\EUK.g01.hdf">
-      <Layer Type="RASRiver" Checked="True" Expanded="True">
+      <Layer Type="RASRiver" Checked="True">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="2" r0c0="River" r0c1="Reach" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
       <Layer Type="RASJunction">
@@ -17,7 +17,7 @@
       </Layer>
       <Layer Type="RASBankLines" Checked="True" />
       <Layer Type="FlowPaths" Checked="True" />
-      <Layer Type="RASXS" Checked="True" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0">
+      <Layer Type="RASXS" Checked="True" Expanded="True" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="River Station" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
       <Layer Type="RASStorageArea">
@@ -64,7 +64,7 @@
   <Plans />
   <EventConditions />
   <Results />
-  <MapLayers Checked="True" Expanded="True">
+  <MapLayers Expanded="True">
     <Layer Name="Google Hybrid" Type="WMSLayer" Checked="True" Filename="%LocalAppData%\HEC\Mapping\5.1\XML\Google Hybrid.xml">
       <Symbology>
         <SurfaceFill Colors="-1,-16777216" Values="0,100" Stretched="True" AlphaTag="102" UseDatasetMinMax="False" RegenerateForScreen="False" />
@@ -79,10 +79,10 @@
     </Layer>
   </Terrains>
   <CurrentView>
-    <MaxX>692773.707367097</MaxX>
-    <MinX>690488.734642622</MinX>
-    <MaxY>5771361.68028264</MaxY>
-    <MinY>5769762.84667656</MinY>
+    <MaxX>695224.633262845</MaxX>
+    <MinX>690447.322925899</MinX>
+    <MaxY>5771576.58730214</MaxY>
+    <MinY>5768233.82341198</MinY>
   </CurrentView>
   <VelocitySettings>
     <Density>1.5</Density>
