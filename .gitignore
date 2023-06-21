@@ -1,3 +1,6 @@
 *.zip
 *.tif
 /Backup
+**/Backup
+Backup.*
+*.backup

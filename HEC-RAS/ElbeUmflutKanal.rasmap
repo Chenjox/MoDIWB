@@ -16,7 +16,7 @@
       </Layer>
       <Layer Type="RASBankLines" Checked="True" />
       <Layer Type="FlowPaths" Checked="True" />
-      <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0">
+      <Layer Type="RASXS" Checked="True" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="River Station" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
       <Layer Type="RASStorageArea">
@@ -63,7 +63,7 @@
   <Plans />
   <EventConditions />
   <Results />
-  <MapLayers Checked="True" Expanded="True">
+  <MapLayers Expanded="True">
     <Layer Name="Google Hybrid" Type="WMSLayer" Checked="True" Filename="%LocalAppData%\HEC\Mapping\5.1\XML\Google Hybrid.xml">
       <Symbology>
         <SurfaceFill Colors="-1,-16777216" Values="0,100" Stretched="True" AlphaTag="204" UseDatasetMinMax="False" RegenerateForScreen="False" />
@@ -78,10 +78,10 @@
     </Layer>
   </Terrains>
   <CurrentView>
-    <MaxX>694663.940795741</MaxX>
-    <MinX>692813.11288888</MinX>
-    <MaxY>5769988.40712429</MaxY>
-    <MinY>5768693.35190334</MinY>
+    <MaxX>696116.802878918</MaxX>
+    <MinX>687127.450651632</MinX>
+    <MaxY>5773731.87737843</MaxY>
+    <MinY>5767441.87737804</MinY>
   </CurrentView>
   <VelocitySettings>
     <Density>1.5</Density>
