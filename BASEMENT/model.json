@@ -1,0 +1,117 @@
+{
+  "SETUP": {
+    "DOMAIN": {
+      "BASEPLANE_2D": {
+        "GEOMETRY": {
+          "INTERPOLATION": {
+            "method": "weighted"
+          },
+          "REGIONDEF": [
+            {
+              "index": [
+                0,
+                1
+              ],
+              "name": "Gruenland"
+            },
+            {
+              "index": [
+                3
+              ],
+              "name": "Gewaesser"
+            },
+            {
+              "index": [
+                4
+              ],
+              "name": "Siedlung"
+            },
+            {
+              "index": [
+                5,
+                14
+              ],
+              "name": "Wald"
+            },
+            {
+              "index": [
+                9
+              ],
+              "name": "Building"
+            }
+          ],
+          "STRINGDEF": [
+            {
+              "name": "INLET",
+              "upstream_direction": "right"
+            },
+            {
+              "name": "OUTLET",
+              "upstream_direction": "left"
+            }
+          ],
+          "mesh_file": "C:/Users/Silvanus/Desktop/Daten/Programmieren/MoDIWB/BASEMENT/EUK_computational-mesh-materials.2dm"
+        },
+        "HYDRAULICS": {
+          "BOUNDARY": {
+            "STANDARD": [
+              {
+                "discharge": 614.0,
+                "name": "inlet",
+                "slope": 0.00027,
+                "string_name": "INLET",
+                "type": "uniform_in"
+              },
+              {
+                "name": "outlet",
+                "slope": 0.00027,
+                "string_name": "OUTLET",
+                "type": "uniform_out"
+              }
+            ]
+          },
+          "FRICTION": {
+            "default_friction": 27.0,
+            "regions": [
+              {
+                "friction": 50.0,
+                "region_name": "Building"
+              },
+              {
+                "friction": 32.5,
+                "region_name": "Gewaesser"
+              },
+              {
+                "friction": 30.0,
+                "region_name": "Gruenland"
+              },
+              {
+                "friction": 50.0,
+                "region_name": "Siedlung"
+              },
+              {
+                "friction": 21.0,
+                "region_name": "Wald"
+              }
+            ],
+            "type": "strickler"
+          },
+          "INITIAL": {
+            "type": "dry"
+          },
+          "PARAMETER": {
+            "CFL": 0.5,
+            "fluid_density": 1000.0,
+            "max_time_step": 100.0,
+            "minimum_water_depth": 0.01,
+            "safe_mode": "on"
+          }
+        }
+      },
+      "PHYSICAL_PROPERTIES": {
+        "gravity": 9.81
+      }
+    },
+    "simulation_name": "EUK"
+  }
+}
