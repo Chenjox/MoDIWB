@@ -5,8 +5,8 @@
       "water_depth"
     ],
     "TIME": {
-      "end": 7200.0,
-      "out": 300.0,
+      "end": 18000.0,
+      "out": 200.0,
       "start": 0.0
     },
     "TIMESTEP": {
