@@ -8,7 +8,7 @@
     </Layer>
   </Features>
   <Geometries Checked="True" Expanded="True">
-    <Layer Name="Elbe-Umflut-Kanal" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\EUK.g01.hdf">
+    <Layer Name="Elbe-Umflut-Kanal" Type="RASGeometry" Expanded="True" Filename=".\EUK.g01.hdf">
       <Layer Type="RASRiver" Checked="True">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="2" r0c0="River" r0c1="Reach" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
@@ -67,8 +67,8 @@
     </Layer>
   </Plans>
   <EventConditions />
-  <Results>
-    <Layer Name="Plan 01" Type="RASResults" Expanded="True" Filename=".\EUK.p01.hdf">
+  <Results Checked="True" Expanded="True">
+    <Layer Name="Plan 01" Type="RASResults" Checked="True" Expanded="True" Filename=".\EUK.p01.hdf">
       <Layer Name="Event Conditions" Type="RASEventConditions" Filename=".\EUK.p01.hdf">
         <Layer Name="Wind Layer" Type="ResultWindLayer" Filename=".\EUK.p01.hdf">
           <ResampleMethod>near</ResampleMethod>
@@ -78,6 +78,16 @@
       </Layer>
       <Layer Type="RASGeometry" Filename=".\EUK.p01.hdf">
         <Layer Type="RASXS" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
+        <Layer Type="RASD2FlowArea">
+          <DataColumnGroupVisibilities>
+            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="False" />
+          </DataColumnGroupVisibilities>
+        </Layer>
+        <Layer Type="MeshPerimeterLayer">
+          <DataColumnGroupVisibilities>
+            <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="True" />
+          </DataColumnGroupVisibilities>
+        </Layer>
         <Layer Name="Culvert Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
         <Layer Name="Culvert Barrels" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="Bridges/Culverts" />
         <Layer Name="Gate Groups" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="" />
@@ -115,7 +125,7 @@
       <Layer Name="Plan" Type="RASPlan" Filename=".\EUK.p01.hdf" GeometryHDF=".\EUK.p01.hdf">
         <Layer Name="Encroachment Regions" Type="RASEncroachmentPolygons" Filename=".\EUK.p01.hdf" />
       </Layer>
-      <Layer Name="Depth" Type="RASResultsMap">
+      <Layer Name="Depth" Type="RASResultsMap" Checked="True">
         <MapParameters MapType="depth" ProfileIndex="0" ProfileName="PF 1" />
       </Layer>
       <Layer Name="Velocity" Type="RASResultsMap">
@@ -141,10 +151,10 @@
     </Layer>
   </Terrains>
   <CurrentView>
-    <MaxX>693391.165315123</MaxX>
-    <MinX>690570.211334255</MinX>
-    <MaxY>5771295.9080693</MaxY>
-    <MinY>5769322.03941979</MinY>
+    <MaxX>695567.626473671</MaxX>
+    <MinX>686578.274246463</MinX>
+    <MaxY>5774362.11017087</MaxY>
+    <MinY>5768072.11017053</MinY>
   </CurrentView>
   <VelocitySettings>
     <Density>1.5</Density>
